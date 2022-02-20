@@ -1,7 +1,7 @@
 <body>
 <!-- Header -->
   <p align="center">
-    <img src="https://github.com/LostShepherdUK/Shepherd-Project/blob/gh-pages/Gallery/HeadsShrink.png?raw=true" width="850" height="371" /></p>
+    <img src="https://github.com/LostShepherdUK/Shepherd-Project/blob/gh-pages/Gallery/HeadsShrink.png?raw=true" width="850" height="320" /></p>
 
 
 <!-- Informational -->
@@ -12,10 +12,11 @@ This is a tool kit orientated towards OSint and information scouting for whiteha
 
 <!-- Divider -->
   <p align="center">
-  <img src="https://github.com/LostShepherdUK/Shepherd-Project/blob/gh-pages/Gallery/neon-line-red.png" width="850" height="112" /></p>
+  <hr>
 
 
 <!-- News Feed -->
-  <p>• Released the first itteration of this site, as well as, the <a href="https://lostshepherduk.github.io/">mainstream blog</a>.</p>
-  <p><b>DATE:</b> <i>20/02/2022</i>
+  <p align="center">• Released the first itteration of this site, as well as, the <a href="https://lostshepherduk.github.io/">mainstream blog</a>.
+  <b>DATE:</b> <i>20/02/2022</i></p>
+  
 </body>

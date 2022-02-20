@@ -21,5 +21,5 @@ This is a tool kit orientated towards OSint and information scouting for whiteha
 • Status: <a href="https://lostshepherduk.github.io/Shepherd-Project">The Shepherd Project</a>, last updated on: 20/02/2022</p>
 
 <!-- License -->
-<h1># License. 🎓</h1><br>
+<h2>License. 🎓</h2><br>
 Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0) - you can copy and redistribute the material in any medium or format based on the Public Domain Dedication outlined here; https://creativecommons.org/licenses/by-nc-nd/4.0/.

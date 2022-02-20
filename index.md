@@ -1,5 +1,4 @@
 <!-- Configuration -->
-<html>
 <body>
 <!-- Header -->
 <head>
@@ -21,5 +20,5 @@ This is a tool kit orientated towards OSint and information scouting for whiteha
   <p align="center">
 • Released the first itteration of this site, as well as, the <a href="https://lostshepherduk.github.io/">mainstream blog</a>.<br>
   <sub><b>DATE:</b> <i>20/02/2022</i></sub></p>
+  
 </body>
-</html>

@@ -12,7 +12,7 @@ This is a tool kit orientated towards OSint and information scouting for whiteha
 
 <!-- Divider -->
   <p align="center">
-  <img src="https://github.com/LostShepherdUK/LostShepherdUK/blob/main/Gallery/neon-line-red.png" width="850" height="112" /></p>
+  <img src="https://github.com/LostShepherdUK/Shepherd-Project/blob/gh-pages/Gallery/neon-line-red.png" width="850" height="112" /></p>
 
 
 <!-- News Feed -->

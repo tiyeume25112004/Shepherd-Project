@@ -22,4 +22,4 @@ This is a tool kit orientated towards OSint and information scouting for whiteha
 
 <!-- License -->
 <h2>License. 🎓</h2>
-Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0) - you can copy and redistribute the material in any medium or format based on the Public Domain Dedication outlined here; https://creativecommons.org/licenses/by-nc-nd/4.0/.
+Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0) - you can copy and redistribute the material in any medium or format based on the Public Domain Dedication outlined here; <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">https://creativecommons.org/licenses/by-nc-nd/4.0/</a>.

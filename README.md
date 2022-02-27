@@ -24,9 +24,10 @@ This is a tool kit orientated towards OSint and information scouting for whiteha
 # Notice - Changes regularly. 📰<br>
 <details>
   Latest:<br>
-• Updated the 'How to use.' so that it at leasts lists coming functions.<br>
+• Updated the foundations so it is utilising obsolete Dorkify as a foundation as well as own-coded changes.<br>
 <br>
   Archived:<br>
+• Updated the 'How to use.' so that it at leasts lists coming functions.<br>
 • Working to make all media (images regarding the repository) uniform in scheme.<br>
 • You can now visit our GitHub pages link <a href="https://lostshepherduk.github.io/Shepherd-Project/">here</a>.
 </details>

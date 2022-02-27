@@ -11,7 +11,9 @@
 <!-- Informational -->
    <p align="center">
 This is a tool kit orientated towards OSint and information scouting for whitehats and CyberSec enthusiasts.<br>
-  The Shepherd-Project is aiming to simplify and hand-hold you through all your OSint, Dorking and Recon needs among others!<br></p></body>
+  The Shepherd-Project is aiming to simplify and hand-hold you through all your OSint, Dorking and Recon needs among others!<br></p>
+  <br>
+  Want to contribute towards it just as others in the CyberSec Communities have, just get in touch through Discord. Links below.</body>
 
 <!-- Divider -->
 <body>

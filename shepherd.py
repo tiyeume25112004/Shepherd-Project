@@ -104,14 +104,14 @@ if args['whoisrec']:
     if yn == 'y' or yn =='Y':
         while True:
             print("\n") # Adds a break in the lines
-            pingreq_ip_entered = input("\nPlease enter the public ip address that you want to record grab: ") # Just asks you to give the program what IP you want to whois.
+            whoisrec_ip_entered = input("\nPlease enter the public ip address that you want to record grab: ") # Just asks you to give the program what IP you want to whois.
             print("\n") # Adds a break in the lines
-            print(f"{pingreq_ip_entered} is the entered IP!") # Let's you know the IP was accepted for use.
+            print(f"{whoisrec_ip_entered} is the entered IP!") # Let's you know the IP was accepted for use.
             print("\n") # Adds a break in the lines
             break
             
         while True:
-            os.system(f"whois {pingreq_ip_entered}") # whois request grabs.
+            os.system(f"whois {whoisrec_ip_entered} -H") # whois request grabs.
             print("") # Adds a break in the lines
             break # Stops any loops.
     else :

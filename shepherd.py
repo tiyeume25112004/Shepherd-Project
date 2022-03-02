@@ -60,7 +60,7 @@ CHOOSE OPTION :
 # PingReq
 
 if args['pingreq']:
-    logo.shepherd_logo() # Prints the Logo.
+    mods.clear_screen()
     print(notice) # Prints the notice seen above, again, if the screen was cleared.
     yn = input()
     if yn == 'y' or yn =='Y':  ## MY CODE ##
@@ -98,7 +98,7 @@ if args['pingreq']:
 # WhoIsRec
 
 if args['whoisrec']:
-    logo.shepherd_logo()
+    mods.clear_screen()
     print(notice)
     yn = input()
     if yn == 'y' or yn =='Y':
@@ -121,7 +121,7 @@ if args['whoisrec']:
 ## CrypteX
 #
 #if args['cryptex']:
-#    logo.shepherd_logo()
+#    mods.clear_screen()
 #    print(notice)
 #    yn = input()
 #    if yn == 'y' or yn =='Y':
@@ -134,7 +134,7 @@ if args['whoisrec']:
 ## Main Program
 #
 #if args['cli']:
-#    logo.shepherd_logo()
+#    mods.clear_screen()
 #    print(notice)
 #    yn = input()
 #    if yn == 'y' or yn =='Y':

@@ -15,19 +15,14 @@ import core.mods as mods # So we can let people modify it easier!
 # List of commands.
 parser = argparse.ArgumentParser()
 ap = parser.add_mutually_exclusive_group()
-ap.add_argument('--cli', help='Run the Command Line version of Shepherd-Project', action='store_true') # Developing.
-ap.add_argument('') # Break in the menu.
-ap.add_argument('--pingreq', help='Is it alive, is it dead? | Shepherd-Project', action='store_true') # Setup and working.
-ap.add_argument('') # Break in the menu.
-ap.add_argument('--vulncheck', help='From the infamous Log4j, to heartbleed and a mass port-scan on a public IP - youll know where to hit them where it hurts | Shepherd-Project', action='store_true') # Developing.
-ap.add_argument('') # Break in the menu.
-ap.add_argument('--whoisrec', help='This will give you public record information about a domains owner, nameservers, etc | Shepherd-Project', action='store_true') # Further research needed.
-ap.add_argument('') # Break in the menu.
-ap.add_argument('--cryptex', help='Utilise the CrypteX package developed by Cythes @ https://github.com/AlexKollar | Shepherd-Project', action='store_true') # Awaiting Alex.
-ap.add_argument('') # Break in the menu.
-ap.add_argument('--p-vpn', help='Connect and Disconnect from ProtonVPN through the P-VPN Feed option | Shepherd-Project', action="store_true") # Further research needed.
-ap.add_argument('') # Break in the menu.
-ap.add_argument('-v', '--version', help='Version', action="version", version='2.2.1') # Setup and working.
+ap.add_argument('--cli', help='Run the Command Line version of Shepherd-Project\n', action='store_true') # Developing.
+ap.add_argument('--pingreq', help='Is it alive, is it dead? | Shepherd-Project\n', action='store_true') # Setup and working.
+ap.add_argument('--vulncheck', help='From the infamous Log4j, to heartbleed and a mass port-scan on a public IP - youll know where to hit them where it hurts | Shepherd-Project\n', action='store_true') # Developing.
+ap.add_argument('--whoisrec', help='This will give you public record information about a domains owner, nameservers, etc | Shepherd-Project\n', action='store_true') # Further research needed.
+ap.add_argument('--cryptex', help='Utilise the CrypteX package developed by Cythes @ https://github.com/AlexKollar | Shepherd-Project\n', action='store_true') # Awaiting Alex.
+ap.add_argument('--p-vpn', help='Connect and Disconnect from ProtonVPN through the P-VPN Feed option | Shepherd-Project\n', action="store_true") # Further research needed.
+ap.add_argument('-h', '--help', help='Gives you the help menu\n', action="store_true") # Setup and working.
+ap.add_argument('-v', '--version', help='Version\n', action="version", version='2.2.1') # Setup and working.
 args = vars(parser.parse_args())
 
 # Fair warning notice before it runs.

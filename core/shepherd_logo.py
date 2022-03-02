@@ -1,16 +1,18 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
-# IMPORTS.
-import time
-import sys
-import os
-import subprocess
-import re
-import core.colors as colors
-import core.mods as mods
+# Imports.
+import sys # System.
+import time # The time.
+import os # Operating System functions.
+import subprocess # So we can call other scripts!
+import re # Regular expression, because we all love that... right?
+import argparse # Google said I needed this.
+import core.shepherd_logo as logo # My logo, of course.
+import core.colors as colors # We all love a splash of color.
+import core.mods as mods # So we can let people modify it easier!
 
-# MAIN SCRIPT.
+# Main logo.
 def shepherd_logo():
   mods.clear_screen()
   print(colors.bcolors.BLINK + '''
@@ -76,17 +78,18 @@ def shepherd_logo():
                                                            \                               `
   ''' + colors.bcolors.ENDC)
   
-  for i in range(100+1):
-    time.sleep(0.05)
-    sys.stdout.write(('='*i)+(''*(100-i))+(" \r [%d"%i+"%] "))
-    sys.stdout.flush()
+  for i in range(100+1): # Makes it load to exactly 100% without stunting or stopping for no reason.
+    time.sleep(0.05) # Change load times by changing this!
+    sys.stdout.write(('='*i)+(''*(100-i))+(" \r [%d"%i+"%] ")) # Fancy math to make the loading bar.
+    sys.stdout.flush() # Yes, this function thing.
 
-  os.system("clear")
+  mods.clear_screen() # Runs the clear screen mod.
   print(f'''
-                                  {colors.bcolors.RED}(♥{colors.bcolors.ENDC} v 2.1.0 {colors.bcolors.RED}♥){colors.bcolors.ENDC}
-  
-  Lead & Developer:                  {colors.bcolors.RED}Shepherd{colors.bcolors.ENDC}
-  Main repository : {colors.bcolors.UNDERLINE}https://github.com/LostShepherdUK/Shepherd-Project{colors.bcolors.ENDC}
-  
-  {colors.bcolors.BOLD}NOTICE:{colors.bcolors.ENDC} {colors.bcolors.BLINK}Onus is on the user for using within the remits of the law.{colors.bcolors.ENDC}
-  (The developers nor open source framework developers are responsible for any actions performed by the end user){colors.bcolors.ENDC}''')
+#                                 {colors.bcolors.RED}(♥{colors.bcolors.ENDC} v 2.1.0 {colors.bcolors.RED}♥){colors.bcolors.ENDC}
+#
+#  Lead & Developer:                 {colors.bcolors.RED}Shepherd{colors.bcolors.ENDC}
+#  Main repository : {colors.bcolors.UNDERLINE}https://github.com/LostShepherdUK/Shepherd-Project{colors.bcolors.ENDC}
+#  
+#  {colors.bcolors.BOLD}NOTICE:{colors.bcolors.ENDC} {colors.bcolors.BLINK}Onus is on the user for using within the remits of the law.{colors.bcolors.ENDC}
+#  (The developers nor open source framework developers are responsible for any actions performed by the end user){colors.bcolors.ENDC}
+''')

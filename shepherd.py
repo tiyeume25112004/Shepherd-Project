@@ -61,18 +61,18 @@ CHOOSE OPTION :
 if args['pingreq']:
     mods.clear_screen() # Clears the screen.
     print(notice) # Prints the notice seen above, again, if the screen was cleared.
-        while True:
-            print("\n") # Adds a break in the lines
-            pingreq_ip_entered = input("\nPlease enter the ip address that you want to ping: ") # Just asks you to give the program what IP you want to ping.
-            print("\n") # Adds a break in the lines
-            print(f"{pingreq_ip_entered} is about to be pinged!") # Let's you know the IP was accepted for use.
-            print("\n") # Adds a break in the lines
-            break
-            
-        while True:
-            os.system(f"ping {pingreq_ip_entered} -c 3") # Pings it 3x.
-            print("") # Adds a break in the lines
-            break # Stops any loops.
+    while True:
+        print("\n") # Adds a break in the lines
+        pingreq_ip_entered = input("\nPlease enter the ip address that you want to ping: ") # Just asks you to give the program what IP you want to ping.
+        print("\n") # Adds a break in the lines
+        print(f"{pingreq_ip_entered} is about to be pinged!") # Let's you know the IP was accepted for use.
+        print("\n") # Adds a break in the lines
+        break
+        
+    while True:
+        os.system(f"ping {pingreq_ip_entered} -c 3") # Pings it 3x.
+        print("") # Adds a break in the lines
+        break # Stops any loops.
     else :  ## MY CODE ##
         sys.exit()
 
@@ -90,20 +90,20 @@ if args['pingreq']:
 if args['whoisrec']:
     mods.clear_screen() # Clears the screen.
     print(notice) # Prints the notice seen above, again, if the screen was cleared.
-        while True:
-            print("\n") # Adds a break in the lines
-            whoisrec_ip_entered = input("\nPlease enter the public ip address that you want to record grab: ") # Just asks you to give the program what IP you want to whois.
-            print("\n") # Adds a break in the lines
-            print(f"{whoisrec_ip_entered} locking on!") # Let's you know the IP was accepted for use.
-            print("\n") # Adds a break in the lines
-            break
-            
-        while True:
-            os.system(f"traceroute {whoisrec_ip_entered}") # trace routes the IP
-            print("\n") # Adds a break in the lines
-            os.system(f"whois {whoisrec_ip_entered} -H") # whois request grabs.
-            print("") # Adds a break in the lines
-            break # Stops any loops.
+    while True:
+        print("\n") # Adds a break in the lines
+        whoisrec_ip_entered = input("\nPlease enter the public ip address that you want to record grab: ") # Just asks you to give the program what IP you want to whois.
+        print("\n") # Adds a break in the lines
+        print(f"{whoisrec_ip_entered} locking on!") # Let's you know the IP was accepted for use.
+        print("\n") # Adds a break in the lines
+        break
+        
+    while True:
+        os.system(f"traceroute {whoisrec_ip_entered}") # trace routes the IP
+        print("\n") # Adds a break in the lines
+        os.system(f"whois {whoisrec_ip_entered} -H") # whois request grabs.
+        print("") # Adds a break in the lines
+        break # Stops any loops.
     else :
         sys.exit()
 

@@ -4,9 +4,6 @@
 # Imports.
 import sys # System.
 import time # The time.
-import os # Operating System functions.
-import re # Regular expression, because we all love that... right?
-import argparse # Google said I needed this.
 import core.colors as colors # We all love a splash of color.
 import core.mods as mods # So we can let people modify it easier!
 

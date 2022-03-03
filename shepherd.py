@@ -15,13 +15,13 @@ import core.mods as mods # So we can let people modify it easier!
 # List of commands.
 parser = argparse.ArgumentParser()
 ap = parser.add_mutually_exclusive_group()
-ap.add_argument('--cli', help='Run the Command Line version\n', action='store_true') # Developing.
-ap.add_argument('--pingreq', help='Send a custom ping\n', action='store_true') # Setup and working.
-ap.add_argument('--vulncheck', help='From the infamous Log4j, heartbleed port-scanner - security never looked so weak!\n', action='store_true') # Developing.
-ap.add_argument('--whoisrec', help='This will give you public record information about a domains owner, nameservers, etc\n', action='store_true') # Further research needed.
-ap.add_argument('--cryptex', help='Utilise the CrypteX package developed by Cythes @ https://github.com/AlexKollar\n', action='store_true') # Awaiting Alex.
-ap.add_argument('--p-vpn', help='Connect and Disconnect from ProtonVPN through the P-VPN Feed option\n', action="store_true") # Further research needed.
-ap.add_argument('-v', '--version', help='Version\n', action="version", version='2.2.1') # Setup and working.
+ap.add_argument('--cli', help='Run the Command Line version.\n', action='store_true') # Developing.
+ap.add_argument('--pingreq', help='Send a customised ping.\n', action='store_true') # Setup and working.
+ap.add_argument('--vulncheck', help='Scan for Log4j, heartbleed, and a port-scanner!\n', action='store_true') # Developing.
+ap.add_argument('--whoisrec', help='Domains lookup, nameservers, etc.\n', action='store_true') # Further research needed.
+ap.add_argument('--cryptex', help='Utilise the CrypteX package developed by Cythes @ https://github.com/AlexKollar!\n', action='store_true') # Awaiting Alex.
+ap.add_argument('--p-vpn', help='Utilise ProtonVPN through the P-VPN feed option.\n', action="store_true") # Further research needed.
+ap.add_argument('-v', '--version', help='Version, nothing more or less.\n', action="version", version='2.2.1') # Setup and working.
 args = vars(parser.parse_args())
 
 # Fair warning notice before it runs.
@@ -35,7 +35,7 @@ notice = f'''
 #  and from where and when you perform these searches - even in some cases when using the built in ProtonVPN connection function.{colors.bcolors.ENDC} 
 # 
 #  {colors.bcolors.RED}DO YOU AGREE TO TO OUR TERMS AND CONDITIONS?{colors.bcolors.ENDC} (STATE: Y/N) THEN PRESS "ENTER"
-'''
+                                                                                                                            '''
 
 # Start of menu script caller.
 

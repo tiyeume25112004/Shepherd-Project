@@ -29,7 +29,7 @@ def vulncheck():
         print('\n\n')
 
 
-    vulncheck_sub_menu()
+    vulncheck_menu()
 
 
     if ch == 1:

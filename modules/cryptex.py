@@ -29,7 +29,7 @@ def cryptex():
         print('\n\n')
 
 
-    cryptex_sub_menu()
+    cryptex_menu()
 
 
     if ch == 1:

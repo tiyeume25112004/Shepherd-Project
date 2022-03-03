@@ -29,7 +29,7 @@ def pvpn():
         print('\n\n')
 
 
-    pvpn_sub_menu()
+    pvpn_menu()
 
 
     if ch == 1:

@@ -18,7 +18,7 @@ ap.add_argument('--vulncheck', help='Scan for Log4j, heartbleed, and a port-scan
 ap.add_argument('--whoisrec', help='Domains lookup, nameservers, etc.\n', action='store_true') # Further research needed.
 ap.add_argument('--cryptex', help='Utilise the CrypteX package developed by Cythes @ https://github.com/AlexKollar!\n', action='store_true') # Awaiting Alex.
 ap.add_argument('--p-vpn', help='Utilise ProtonVPN through the P-VPN feed option.\n', action="store_true") # Further research needed.
-ap.add_argument('-v', '--version', help='Version, nothing more or less.\n', action="version", version='2.2.3') # Working.
+ap.add_argument('-v', '--version', help='Version, nothing more or less.\n', action="version", version='2.2.5') # Working.
 args = vars(parser.parse_args())
 
 

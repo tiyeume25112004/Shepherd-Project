@@ -82,7 +82,7 @@ def shepherd_logo():
 
   mods.clear_screen() # Runs the clear screen mod.
   print(f'''
-#                                 {colors.bcolors.RED}(♥{colors.bcolors.ENDC} v 2.2.3 {colors.bcolors.RED}♥){colors.bcolors.ENDC}
+#                                 {colors.bcolors.RED}(♥{colors.bcolors.ENDC} v 2.2.5 {colors.bcolors.RED}♥){colors.bcolors.ENDC}
 #
 #  Lead & Developer:                 {colors.bcolors.RED}Shepherd{colors.bcolors.ENDC}
 #  Main repository : {colors.bcolors.UNDERLINE}https://github.com/LostShepherdUK/Shepherd-Project{colors.bcolors.ENDC}

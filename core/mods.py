@@ -1,10 +1,10 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
-# IMPORTS.
+# Imports.
 from os import system, name
 
-# MAIN SCRIPT.
+# Main logo.
 def clear_screen():
     if name == 'nt':
         _ = system('cls')

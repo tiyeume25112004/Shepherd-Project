@@ -1,4 +1,7 @@
-# COLOR NAMES.
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+
+# Color names.
 class bcolors:
     HEADER = '\033[95m'
     BOLD = '\033[1m'

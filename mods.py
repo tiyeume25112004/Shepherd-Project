@@ -1,7 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
-# IMPORTS.
+# Mods.
 from os import system, name
 
 # MAIN SCRIPT.

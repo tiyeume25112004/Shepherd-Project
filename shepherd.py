@@ -16,13 +16,14 @@ import core.mods as mods # So we can let people modify it easier!
 parser = argparse.ArgumentParser()
 ap = parser.add_mutually_exclusive_group()
 ap.add_argument('--cli', help='Run the Command Line version.\n', action='store_true') # Developing.
-ap.add_argument('--pingreq', help='Send a customised ping.\n', action='store_true') # Setup and working.
+ap.add_argument('--pingreq', help='Send a customised ping.\n', action='store_true') # Working.
 ap.add_argument('--vulncheck', help='Scan for Log4j, heartbleed, and a port-scanner!\n', action='store_true') # Developing.
 ap.add_argument('--whoisrec', help='Domains lookup, nameservers, etc.\n', action='store_true') # Further research needed.
 ap.add_argument('--cryptex', help='Utilise the CrypteX package developed by Cythes @ https://github.com/AlexKollar!\n', action='store_true') # Awaiting Alex.
 ap.add_argument('--p-vpn', help='Utilise ProtonVPN through the P-VPN feed option.\n', action="store_true") # Further research needed.
-ap.add_argument('-v', '--version', help='Version, nothing more or less.\n', action="version", version='2.2.3') # Setup and working.
+ap.add_argument('-v', '--version', help='Version, nothing more or less.\n', action="version", version='2.2.3') # Working.
 args = vars(parser.parse_args())
+
 
 # Fair warning notice before it runs.
 notice = f'''
@@ -35,17 +36,16 @@ notice = f'''
 #  and from where and when you perform these searches - even in some cases when using the built in ProtonVPN connection function.{colors.bcolors.ENDC} 
 # 
 #  {colors.bcolors.RED}DO YOU AGREE TO TO OUR TERMS AND CONDITIONS?{colors.bcolors.ENDC} (STATE: Y/N) THEN PRESS "ENTER"
-                                                                                                                            '''
+'''
+
 
 # Start of menu script caller.
-
 def shepherd_menu():
     global ch
-    mods.clear_screen()
-    logo.shepherd_logo()
+    mods.clear_screen() # Clears the screen.
+    logo.shepherd_logo() # Prints the logo.
     print(f'''
 CHOOSE OPTION :
-
     {colors.bcolors.OKBLUE}[~]{colors.bcolors.ENDC} Ping Request    (Working)     [x]
     {colors.bcolors.OKBLUE}[~]{colors.bcolors.ENDC} Vuln Checking   (Developing)  [x]
     {colors.bcolors.OKBLUE}[~]{colors.bcolors.ENDC} Who Is Record   (Working)     [x]
@@ -57,18 +57,15 @@ CHOOSE OPTION :
     print('\n\n')
 
 
-# PingReq
-
+# PingReq.
 if args['pingreq']:
-    mods.clear_screen()
+    mods.clear_screen() # Clears the screen.
     print(notice) # Prints the notice seen above, again, if the screen was cleared.
-    yn = input()
-    if yn == 'y' or yn =='Y':  ## MY CODE ##
         while True:
             print("\n") # Adds a break in the lines
             pingreq_ip_entered = input("\nPlease enter the ip address that you want to ping: ") # Just asks you to give the program what IP you want to ping.
             print("\n") # Adds a break in the lines
-            print(f"{pingreq_ip_entered} is the entered IP!") # Let's you know the IP was accepted for use.
+            print(f"{pingreq_ip_entered} is about to be pinged!") # Let's you know the IP was accepted for use.
             print("\n") # Adds a break in the lines
             break
             
@@ -77,36 +74,27 @@ if args['pingreq']:
             print("") # Adds a break in the lines
             break # Stops any loops.
     else :  ## MY CODE ##
-        print('YOU MUST AGREE TO THE TERMS BEFORE USE!')
         sys.exit()
 
-# Below here is under development and is best ignored for now!
 
-# VulnCheck
-#
+# VulnCheck.
 #if args['vulncheck']:
-#    logo.shepherd_logo()
-#    print(notice)
-#    yn = input()
-#    if yn == 'y' or yn =='Y':
+#   mods.clear_screen() # Clears the screen.
+#   print(notice) # Prints the notice seen above, again, if the screen was cleared.
 #        
 #    else :
-#        print('YOU MUST AGREE TO THE TERMS BEFORE USE!')
 #        sys.exit()
-#
-#
-# WhoIsRec
 
+
+# WhoIsRec.
 if args['whoisrec']:
-    mods.clear_screen()
-    print(notice)
-    yn = input()
-    if yn == 'y' or yn =='Y':
+    mods.clear_screen() # Clears the screen.
+    print(notice) # Prints the notice seen above, again, if the screen was cleared.
         while True:
             print("\n") # Adds a break in the lines
             whoisrec_ip_entered = input("\nPlease enter the public ip address that you want to record grab: ") # Just asks you to give the program what IP you want to whois.
             print("\n") # Adds a break in the lines
-            print(f"{whoisrec_ip_entered} locked!") # Let's you know the IP was accepted for use.
+            print(f"{whoisrec_ip_entered} locking on!") # Let's you know the IP was accepted for use.
             print("\n") # Adds a break in the lines
             break
             
@@ -117,24 +105,19 @@ if args['whoisrec']:
             print("") # Adds a break in the lines
             break # Stops any loops.
     else :
-        print('YOU MUST AGREE TO THE TERMS BEFORE USE!')
         sys.exit()
 
-## CrypteX
-#
+
+# CrypteX.
 #if args['cryptex']:
-#    mods.clear_screen()
-#    print(notice)
-#    yn = input()
-#    if yn == 'y' or yn =='Y':
+#   mods.clear_screen() # Clears the screen.
+#   print(notice) # Prints the notice seen above, again, if the screen was cleared.
 #        
 #    else :
-#        print('YOU MUST AGREE TO THE TERMS BEFORE USE!')
 #        sys.exit()
-#
-#
-## Main Program
-#
+
+
+# Main Program (Command Line).
 #if args['cli']:
 #    mods.clear_screen()
 #    print(notice)
@@ -151,25 +134,25 @@ if args['whoisrec']:
 #        search_url.url_search(q)
 #
 #
-#    elif ch == 3:
+#    elif ch == 2:
 #        s = input('SEARCH BOOKS/AUTHORS: ')
 #        q = str('book:' + s)
 #        print('\nSearching Books: \n')
 #        search_url.url_search(q)
 #
 #
-#    elif ch == 4:
+#    elif ch == 3:
 #        s = input('SEARCH SONGS/ARTISTS: ')
 #        q = str('?intitle:index.of?mp3 ' + s)
 #        print('\nSearching Songs: \n')
 #        search_url.url_search(q)
 #
 #
-#    elif ch == 5:
+#    elif ch == 4:
 #        info.information()
 #
 #
-#    elif ch == 6:
+#    elif ch == 5:
 #        hacking_menu()
 #        if ch6 == 1:
 #            wp.wordpress()
@@ -201,8 +184,6 @@ if args['whoisrec']:
 #        else:
 #            print('INVALID OPTION : ')
 #            sys.exit()
-#
-#
 #
 #    else:
 #        print('INVALID OPTION! \n EXITING ')

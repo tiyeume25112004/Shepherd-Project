@@ -1,28 +1,22 @@
 # Shepherd - Information. 🐏<br>
-<!-- Configuration -->
 <body>
-<!-- Header -->
+    <a href="https://www.codacy.com/gh/LostShepherdUK/Shepherd-Project/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=LostShepherdUK/Shepherd-Project&amp;utm_campaign=Badge_Grade"><img src="https://app.codacy.com/project/badge/Grade/d34744a5e82e44369e489eceb8508cd4"/></a>
 <head>
   <p align="center">
     <img src="https://github.com/LostShepherdUK/Shepherd-Project/blob/gh-pages/Gallery/CapricornAlt.png?raw=true" width="500" height="508" /></p>
 </head>
 
-
-<!-- Informational -->
    <p align="center">
 This is a tool kit orientated towards OSint and information scouting for whitehats and CyberSec enthusiasts.<br>
   The Shepherd-Project is aiming to simplify and hand-hold you through all your OSint, Dorking and Recon needs among others!<br>
   <br>
   Want to contribute towards it just as others in the CyberSec Communities have, just get in touch through Discord. <i>Links below.</i></p></body>
 
-<!-- Divider -->
 <body>
   <p align="center">
   <img src="https://github.com/LostShepherdUK/Shepherd-Project/blob/gh-pages/Gallery/neon-line-red.png?raw=true" width="850" height="112" /></p>
 </body>
 
-
-<!-- Notice -->
 # Notice - Changes regularly. 📰<br>
 <details>
   Latest:<br>
@@ -35,8 +29,6 @@ This is a tool kit orientated towards OSint and information scouting for whiteha
 • You can now visit our GitHub pages link <a href="https://lostshepherduk.github.io/Shepherd-Project/">here</a>.
 </details>
 
-
-<!-- Getting started -->
 # Getting started. ⚙ <br>
 <details>
 It cannot be easier to get going, just follow the steps below! <br>
@@ -45,11 +37,9 @@ It cannot be easier to get going, just follow the steps below! <br>
 Not available just yet, least for the public. <br>
 <br>
 **Additional configuration.** <br>
-• You'll need to get the prerequisite using <code>sudo pip install requirements.txt</code>, while in the Shepherd-Project file. 
+• You'll need to get the prerequisite using <code>sudo pip install -r requirements.txt</code>, while in the Shepherd-Project file. 
 </details>
 
-
-<!-- How to use -->
 # How to use. 📚<br>
 <details>
 • CLI-Cpanel: Command Line Interface CPanel which allows for remote recon such as Key Logging remotely, screen capture, and remote payload drops, for now at least. <br>
@@ -70,8 +60,6 @@ Not available just yet, least for the public. <br>
   <br>
 </details>
 
-
-<!-- The team & supporters -->
 # The team & supporters. 👥<br>
 <details>
 Shepherd | Lead & Developer                            | https://github.com/LostShepherdUK<br>
@@ -81,8 +69,6 @@ SAINTS | Community Bug Testing                         | https://discord.com/inv
 Askeron | Hosting                                      | https://www.askeron.uk<br>
 </details>
 
-
-<!-- Supported versions -->
 # Supported versions. ☁<br>
 <details>
 Below you'll find advice for which versions we're still able to provide support for! <br>
@@ -93,8 +79,6 @@ Below you'll find advice for which versions we're still able to provide support 
 | 1.x.x   | :white_check_mark: |
 </details>
 
-
-<!-- Reporting a vulnerablity -->
 # Reporting a vulnerability. 🔓<br>
 If you want to let us know of a potential vulnerability or major flaw, just visit: <br>
 https://github.com/LostShepherdUK/Shepherd-Project/issues <br>
@@ -102,8 +86,6 @@ and click 'New issue', we'll look into it as soon as we can.
 
 (<i>Before adding a new issue, see if it isn't already in bug triage <a href="https://github.com/LostShepherdUK/Shepherd-Project/projects/2">here</a></i>!)
 
-
-<!-- Disclaimer -->
 # Disclaimer. ❗<br>
 Please read the following information carefully before using this tool!<br>
 The content of this repository and the tool therein is for educational purposes and legitimate use cases only.<br>
@@ -113,7 +95,5 @@ with regards to cyber terrorism, thefts and blackmail among other malicious acti
 
 Using this tool is not anonymous, and you need to be aware that Google and your ISP keep logs and knows who you are, where you and not just that but what you've been searching for with this tool.  Dorking, OSint, Recon and Scouting which methodologies are detailed in the CLI tool are all legal practices, but can easily fall into a black-hat/illegal classification if you are not careful with your actions.  I cannot be held responsible for the outcome of your use when using Shepherd.<br>
 
-
-<!-- License -->
 # License. 🎓<br>
 Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0) - you can copy and redistribute the material in any medium or format based on the Public Domain Dedication outlined here: https://creativecommons.org/licenses/by-nc-nd/4.0/.

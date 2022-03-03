@@ -5,7 +5,6 @@
 import sys # System.
 import time # The time.
 import os # Operating System functions.
-import subprocess # So we can call other scripts!
 import re # Regular expression, because we all love that... right?
 import argparse # Google said I needed this.
 import core.shepherd_logo as logo # My logo, of course.

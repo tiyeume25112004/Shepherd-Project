@@ -5,7 +5,6 @@
 import sys # System.
 import time # The time.
 import os # Operating System functions.
-import subprocess # So we can call other scripts!
 import re # Regular expression, because we all love that... right?
 import argparse # Google said I needed this.
 import core.colors as colors # We all love a splash of color.
@@ -76,7 +75,6 @@ def shepherd_logo():
                                      \___.'  /    | `.___, |`---' /    | `.___, /     `___,'
                                                            \                               `
   ''' + colors.bcolors.ENDC)
-  
   for i in range(100+1): # Makes it load to exactly 100% without stunting or stopping for no reason.
     time.sleep(0.05) # Change load times by changing this!
     sys.stdout.write(('='*i)+(''*(100-i))+(" \r [%d"%i+"%] ")) # Fancy math to make the loading bar.

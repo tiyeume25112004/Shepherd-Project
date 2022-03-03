@@ -106,11 +106,13 @@ if args['whoisrec']:
             print("\n") # Adds a break in the lines
             whoisrec_ip_entered = input("\nPlease enter the public ip address that you want to record grab: ") # Just asks you to give the program what IP you want to whois.
             print("\n") # Adds a break in the lines
-            print(f"{whoisrec_ip_entered} is the entered IP!") # Let's you know the IP was accepted for use.
+            print(f"{whoisrec_ip_entered} locked!") # Let's you know the IP was accepted for use.
             print("\n") # Adds a break in the lines
             break
             
         while True:
+            os.system(f"traceroute {whoisrec_ip_entered}") # trace routes the IP
+            print("\n") # Adds a break in the lines
             os.system(f"whois {whoisrec_ip_entered} -H") # whois request grabs.
             print("") # Adds a break in the lines
             break # Stops any loops.

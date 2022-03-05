@@ -65,7 +65,7 @@ if args['pingreq']:
         print(f"IP/Domain: {pingreq_ip_entered}, is about to be pinged!") # Let's you know the IP was accepted for use.
         print("\n") # Adds a break in the lines
         break
-        
+
     while True:
         os.system(f"ping {pingreq_ip_entered} -c 3") # Pings it 3x.
         print("") # Adds a break in the lines
@@ -78,7 +78,7 @@ if args['pingreq']:
 #if args['vulncheck']:
 #   mods.clear_screen() # Clears the screen.
 #   print(notice) # Prints the notice seen above, again, if the screen was cleared.
-#        
+    
 #    else :
 #        sys.exit()
 

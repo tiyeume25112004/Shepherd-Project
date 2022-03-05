@@ -5,7 +5,6 @@
 import sys # System.
 import time # The time.
 import core.shepherd_logo as logo # My logo, of course.
-import core.logo as logo # My logo, of course.
 import core.colors as colors # We all love a splash of color.
 import core.mods as mods # So we can let people modify it easier!
 

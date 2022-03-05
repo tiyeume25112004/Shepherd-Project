@@ -71,7 +71,7 @@ if args['pingreq']:
         print("") # Adds a break in the lines.
         break # Stops any loops.
     else :  ## MY CODE ##
-        sys.exit()
+        exit()
 
 
 # VulnCheck.
@@ -79,7 +79,7 @@ if args['pingreq']:
 #   mods.clear_screen() # Clears the screen.
 #   print(notice) # Prints the notice seen above, again, if the screen was cleared.
 #    else :
-#        sys.exit()
+#        exit()
 
 
 # WhoIsRec.
@@ -99,17 +99,18 @@ if args['whoisrec']:
         print("") # Adds a break in the lines.
         break # Stops any loops.
     else :
-        sys.exit()
+        exit()
 
 
 # CrypteX.
-#if args['cryptex']:
-#   mods.clear_screen() # Clears the screen.
-#   print(notice) # Prints the notice seen above, again, if the screen was cleared.      
-#
-#    else :
-#        sys.exit()
-#
+if args['cryptex']:
+    mods.clear_screen() # Clears the screen.
+    print(notice) # Prints the notice seen above, again, if the screen was cleared.      
+    while True:
+        os.system("python3 ./cryptex/cryptex.py") # Loads cryptex menu.
+    else :
+        exit()
+
 # Main Program (Command Line).
 #if args['cli']:
 #    mods.clear_screen()
@@ -119,7 +120,7 @@ if args['whoisrec']:
 #        
 #    else :
 #        print('YOU MUST AGREE TO THE TERMS BEFORE USE!')
-#        sys.exit()
+#        exit()
 #
 #    if ch == 1:
 #        q = input('SEARCH : ')
@@ -176,8 +177,8 @@ if args['whoisrec']:
 #
 #        else:
 #            print('INVALID OPTION : ')
-#            sys.exit()
+#            exit()
 #
 #    else:
 #        print('INVALID OPTION! \n EXITING ')
-#        sys.exit()
+#        exit()

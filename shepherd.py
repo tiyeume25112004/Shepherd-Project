@@ -16,7 +16,6 @@ ap.add_argument('--cli', help='Run the Command Line version.\n', action='store_t
 ap.add_argument('--pingreq', help='Send a customised ping.\n', action='store_true') # Working.
 ap.add_argument('--vulncheck', help='Scan for Log4j, heartbleed, and a port-scanner!\n', action='store_true') # Developing.
 ap.add_argument('--whoisrec', help='Domains lookup, nameservers, etc.\n', action='store_true') # Further research needed.
-ap.add_argument('--cryptex', help='Utilise the CrypteX package developed by Cythes @ https://github.com/AlexKollar!\n', action='store_true') # Awaiting Alex.
 ap.add_argument('--p-vpn', help='Utilise ProtonVPN through the P-VPN feed option.\n', action="store_true") # Further research needed.
 ap.add_argument('-v', '--version', help='Version, nothing more or less.\n', action="version", version='2.2.5') # Working.
 args = vars(parser.parse_args())
@@ -43,15 +42,14 @@ def shepherd_menu():
     logo.shepherd_logo() # Prints the logo.
     print(f'''
 CHOOSE OPTION :
-    {colors.bcolors.OKBLUE}[~]{colors.bcolors.ENDC} Ping Request    (Working)     [x]
-    {colors.bcolors.OKBLUE}[~]{colors.bcolors.ENDC} Vuln Checking   (Developing)  [x]
-    {colors.bcolors.OKBLUE}[~]{colors.bcolors.ENDC} Who Is Record   (Working)     [x]
-    {colors.bcolors.OKBLUE}[~]{colors.bcolors.ENDC} CrypteX         (Waiting)     [x]
-    {colors.bcolors.OKBLUE}[~]{colors.bcolors.ENDC} ProtonVPN Cnct  (Developing)  [x]
+    {colors.bcolors.OKBLUE}[~]{colors.bcolors.ENDC} Ping Request    [1]
+    {colors.bcolors.OKBLUE}[~]{colors.bcolors.ENDC} Vuln Checking   (Developing)  [2]
+    {colors.bcolors.OKBLUE}[~]{colors.bcolors.ENDC} Who Is Record   [3]
+    {colors.bcolors.OKBLUE}[~]{colors.bcolors.ENDC} ProtonVPN Cnct  (Developing)  [4]
     ''')
 
     ch = int(input("    --> "))
-    print('\n\n')
+    print('\n')
 
 
 # PingReq.
@@ -59,6 +57,7 @@ if args['pingreq']:
     mods.clear_screen() # Clears the screen.
     print(notice) # Prints the notice seen above, again, if the screen was cleared.
     while True:
+        def pingreq_run():
         print("\n") # Adds a break in the lines.
         pingreq_ip_entered = input("\nPlease enter the ip address that you want to ping: ") # Just asks you to give the program what IP you want to ping.
         print("\n") # Adds a break in the lines.
@@ -87,6 +86,7 @@ if args['whoisrec']:
     mods.clear_screen() # Clears the screen.
     print(notice) # Prints the notice seen above, again, if the screen was cleared.
     while True:
+        def whoisrec_run():
         print("\n") # Adds a break in the lines.
         whoisrec_ip_entered = input("\nPlease enter the ip address that you want to record grab: ") # Just asks you to give the program what IP you want to whois.
         print("\n") # Adds a break in the lines.
@@ -101,83 +101,29 @@ if args['whoisrec']:
     else :
         exit()
 
-
-# CrypteX.
-if args['cryptex']:
-    mods.clear_screen() # Clears the screen.
-    print(notice) # Prints the notice seen above, again, if the screen was cleared.      
-    while True:
-        os.system("python3 ./modules/cryptex/cryptex.py") # Loads cryptex menu.
-    else :
-        exit()
-
-# Main Program (Command Line).
+## Main Program (Command Line).
 #if args['cli']:
 #    mods.clear_screen()
 #    print(notice)
 #    yn = input()
 #    if yn == 'y' or yn =='Y':
-#        
+#    print(shepherd_menu)
+#    
 #    else :
 #        print('YOU MUST AGREE TO THE TERMS BEFORE USE!')
 #        exit()
 #
 #    if ch == 1:
-#        q = input('SEARCH : ')
 #        print('\n Performing PingReq Check\n')
-#        search_url.url_search(q)
-#
 #
 #    elif ch == 2:
-#        s = input('SEARCH BOOKS/AUTHORS: ')
-#        q = str('book:' + s)
 #        print('\nSearching Books: \n')
-#        search_url.url_search(q)
-#
 #
 #    elif ch == 3:
-#        s = input('SEARCH SONGS/ARTISTS: ')
-#        q = str('?intitle:index.of?mp3 ' + s)
 #        print('\nSearching Songs: \n')
-#        search_url.url_search(q)
-#
 #
 #    elif ch == 4:
 #        info.information()
-#
-#
-#    elif ch == 5:
-#        hacking_menu()
-#        if ch6 == 1:
-#            wp.wordpress()
-#
-#        elif ch6 == 2:
-#            q = str('filetype:ini “wordfence”')
-#            print('\nSearching... \n')
-#            search_url.url_search(q)
-#
-#        elif ch6 == 3:
-#            up.userpass()
-#
-#        elif ch6 == 4:
-#            cam.cameras()
-#
-#        elif ch6 == 5:
-#            q = str('inurl:/proc/self/cwd')
-#            print('\nSearching... \n')
-#            search_url.url_search(q)
-#
-#        elif ch6 == 6:
-#            q = str('allintext:username filetype:log')
-#            print('\nSearching... \n')
-#            search_url.url_search(q)
-#
-#        elif ch6 == 7:
-#            ftp.ftp()
-#
-#        else:
-#            print('INVALID OPTION : ')
-#            exit()
 #
 #    else:
 #        print('INVALID OPTION! \n EXITING ')

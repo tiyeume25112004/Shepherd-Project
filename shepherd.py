@@ -78,7 +78,6 @@ if args['pingreq']:
 #if args['vulncheck']:
 #   mods.clear_screen() # Clears the screen.
 #   print(notice) # Prints the notice seen above, again, if the screen was cleared.
-    
 #    else :
 #        sys.exit()
 
@@ -108,8 +107,7 @@ if args['whoisrec']:
 # CrypteX.
 #if args['cryptex']:
 #   mods.clear_screen() # Clears the screen.
-#   print(notice) # Prints the notice seen above, again, if the screen was cleared.
-#        
+#   print(notice) # Prints the notice seen above, again, if the screen was cleared.      
 #    else :
 #        sys.exit()
 

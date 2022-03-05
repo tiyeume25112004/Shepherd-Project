@@ -107,7 +107,7 @@ if args['cryptex']:
     mods.clear_screen() # Clears the screen.
     print(notice) # Prints the notice seen above, again, if the screen was cleared.      
     while True:
-        os.system("python3 ./cryptex/cryptex.py") # Loads cryptex menu.
+        os.system("python3 ./modules/cryptex/cryptex.py") # Loads cryptex menu.
     else :
         exit()
 
